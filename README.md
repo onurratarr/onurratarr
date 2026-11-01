@@ -12,17 +12,18 @@ retrieval and tool-calling workflows, and designing the evaluation and human-rev
 
 ## Featured projects
 
-The first three are **reference implementations** inspired by client projects I delivered. They use synthetic data only — no client code or client data.
+Ordered by relevance to forward-deployed work. These are **reference implementations on synthetic data only** — no client code or client data. Three of them (retail-whatsapp-llm-agent, turkish-legal-rag-intake, llm-eval-harness) are inspired by client projects I delivered.
 
 | Project | What it shows |
 |---|---|
-| [retail-whatsapp-llm-agent](https://github.com/onurratarr/retail-whatsapp-llm-agent) | WhatsApp customer agent for a retail chain: tool-calling over a SQLite product DB (price / promotion / stock), escalation to staff, mock WhatsApp Cloud API webhook (FastAPI), SQL/Python store reports. |
-| [turkish-legal-rag-intake](https://github.com/onurratarr/turkish-legal-rag-intake) | Turkish legal RAG assistant with citation-grounded answers, a client-intake agent producing structured JSON, an attorney human-in-the-loop review queue, and a rubric-based eval. |
-| [llm-eval-harness](https://github.com/onurratarr/llm-eval-harness) | Compact LLM evaluation harness: rubric + reference-based scoring, LLM-as-judge, pairwise preference (RLHF-style) labels, Cohen's kappa, baseline regression tests. |
-| [enterprise-integration-agent](https://github.com/onurratarr/enterprise-integration-agent) | LLM agent calling REST APIs of a Salesforce/Zendesk-style mock CRM + ticketing system: OAuth2 (client credentials, auth code + PKCE, refresh rotation), HMAC-signed idempotent webhooks, retries with backoff + jitter, PII-redacted audit log. |
-| [voice-contact-center-agent](https://github.com/onurratarr/voice-contact-center-agent) | Contact-center voice agent: explicit flow-spec state machine with barge-in and silence handling, verified tool calls, rule-triggered warm handoff with a structured context summary, pluggable ASR/TTS (offline mocks), transcript eval for task success, handoff, policy and latency. |
-| [text-to-sql-analytics-agent](https://github.com/onurratarr/text-to-sql-analytics-agent) | Schema-aware text-to-SQL agent over a synthetic dbt-style DuckDB warehouse (staging → intermediate → marts, 32 data quality tests): read-only SQL guard with table allowlist, PII and LIMIT rules, schema validation with self-correction, execution-accuracy eval. |
-| [ofi-cross-impact-analysis](https://github.com/onurratarr/ofi-cross-impact-analysis) | Code and analysis for Order Flow Imbalance (OFI) cross-impact analysis. |
+| [enterprise-integration-agent](https://github.com/onurratarr/enterprise-integration-agent) | LLM agent over mock CRM + ticketing REST APIs: OAuth2 (client credentials, PKCE, refresh rotation), HMAC-signed idempotent webhooks, retries with backoff, PII-redacted audit log. |
+| [customer-data-onboarding-pipeline](https://github.com/onurratarr/customer-data-onboarding-pipeline) | Onboarding a customer's messy CSV drops + paginated REST API into DuckDB/Postgres: data contracts with quarantine, LLM-assisted column mapping with human review and a held-out eval, dbt-style models, DQ checks, idempotent re-runs, audit trail. |
+| [retail-whatsapp-llm-agent](https://github.com/onurratarr/retail-whatsapp-llm-agent) | WhatsApp retail agent: tool-calling over a product DB (price / promotion / stock), escalation to staff, mock WhatsApp Cloud API webhook, store reports. |
+| [turkish-legal-rag-intake](https://github.com/onurratarr/turkish-legal-rag-intake) | Turkish legal RAG with citation-grounded answers, structured client-intake agent, attorney review queue, rubric-based eval. |
+| [text-to-sql-analytics-agent](https://github.com/onurratarr/text-to-sql-analytics-agent) | Schema-aware text-to-SQL over a dbt-style DuckDB warehouse: read-only SQL guard (allowlist, PII, LIMIT), self-correction, execution-accuracy eval. |
+| [llm-eval-harness](https://github.com/onurratarr/llm-eval-harness) | LLM evaluation harness: rubric + reference scoring, LLM-as-judge, pairwise preference labels, Cohen's kappa, regression tests. |
+
+**More:** [voice-contact-center-agent](https://github.com/onurratarr/voice-contact-center-agent) (flow-spec voice agent with barge-in, verified tool calls, warm handoff, transcript eval) · [ofi-cross-impact-analysis](https://github.com/onurratarr/ofi-cross-impact-analysis) (Order Flow Imbalance cross-impact analysis).
 
 ## Skills
 
