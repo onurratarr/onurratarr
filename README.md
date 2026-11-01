@@ -20,6 +20,7 @@ The first three are **reference implementations** inspired by client projects I 
 | [turkish-legal-rag-intake](https://github.com/onurratarr/turkish-legal-rag-intake) | Turkish legal RAG assistant with citation-grounded answers, a client-intake agent producing structured JSON, an attorney human-in-the-loop review queue, and a rubric-based eval. |
 | [llm-eval-harness](https://github.com/onurratarr/llm-eval-harness) | Compact LLM evaluation harness: rubric + reference-based scoring, LLM-as-judge, pairwise preference (RLHF-style) labels, Cohen's kappa, baseline regression tests. |
 | [enterprise-integration-agent](https://github.com/onurratarr/enterprise-integration-agent) | LLM agent calling REST APIs of a Salesforce/Zendesk-style mock CRM + ticketing system: OAuth2 (client credentials, auth code + PKCE, refresh rotation), HMAC-signed idempotent webhooks, retries with backoff + jitter, PII-redacted audit log. |
+| [voice-contact-center-agent](https://github.com/onurratarr/voice-contact-center-agent) | Contact-center voice agent: explicit flow-spec state machine with barge-in and silence handling, verified tool calls, rule-triggered warm handoff with a structured context summary, pluggable ASR/TTS (offline mocks), transcript eval for task success, handoff, policy and latency. |
 | [ofi-cross-impact-analysis](https://github.com/onurratarr/ofi-cross-impact-analysis) | Code and analysis for Order Flow Imbalance (OFI) cross-impact analysis. |
 
 ## Skills
